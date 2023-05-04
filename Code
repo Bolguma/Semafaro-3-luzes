@@ -1,0 +1,25 @@
+// C++ code
+//
+int Temp = 0;
+
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+
+  Temp = 1000;
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(Temp); // Wait for Temp millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(11, HIGH);
+  delay(Temp); // Wait for Temp millisecond(s)
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(Temp); // Wait for Temp millisecond(s)
+  digitalWrite(12, LOW);
+}
